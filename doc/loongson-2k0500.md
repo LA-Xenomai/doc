@@ -1,4 +1,4 @@
-## 龙芯2K0500
+## 龙芯 2K0500
 
 [For English](https://github.com/LA-Xenomai/doc/blob/master/doc/loongson-2k0500-en.md)
 
@@ -6,7 +6,7 @@
 
 2K0500开发板中与启动过程相关的资源包括：
 
-- U-Boot： 位于 SPI flash 中，作为固件使用
+- U-Boot：位于 SPI flash 中，作为固件使用
 - Linux 镜像：位于 nand flash 中，需要使用 U-Boot 工具 `mkimage` 制作为 uImage
 - 根文件系统镜像：位于 nand flash 中，使用 buildroot 制作
 
@@ -16,7 +16,7 @@
 2. U-Boot 从 nand flash 中寻找并加载 Linux 内核镜像 uImage
 3. Linux 内核初始化结束时从 nand flash 挂载根文件系统
 
-### uImage制作流程
+### uImage 制作流程
 
 ![](../img/mk-uimage.png)
 
