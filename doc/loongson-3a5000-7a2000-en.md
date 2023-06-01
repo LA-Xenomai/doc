@@ -4,7 +4,7 @@
 
 Resources related to booting process:
 
-- PMON/UEFI Firmware: Located in ROM, "old world" firmware in LoongArch software environment
+- PMON/UEFI Firmware: Located in ROM, "old world" firmware is required for Linux 4.19
 - Linux kernel: Located in `/boot` directory of disk partition, (compressed) ELF file, namely vmlinux or vmlinuz
 - rootfs: Located in disk partition, based on distribution [Loongnix](http://www.loongnix.cn/zh/loongnix/)
 
