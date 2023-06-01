@@ -23,7 +23,7 @@
 Linux 内核可参考以下脚本构建 uImage：
 ```sh
 #!/usr/bin/bash
-cd $(LINUX_SRC_HOME)
+cd $(LINUX_ROOT)
 make *defconfig
 make vmlinux.bin -j
 cat arch/loongarch/boot/vmlinux.bin | \
@@ -48,4 +48,6 @@ bash scripts/mkuboot.sh \
     - `-e` 选项指定内核入口地址，如 `0x90000000008973ec`
     - `-n` 选项指定内核名称，如 `linux-4.19.190-xeno`
 
-非 Linux 内核可参考以上方法构建 uImage。
+> 注：
+    1. 非 Linux 内核可参考以上方法构建 uImage
+    2. 在 Linux 源码目录中完成配置后，可使用 `make uImage` 直接生成 uImage
