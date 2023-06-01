@@ -47,5 +47,5 @@ bash scripts/mkuboot.sh \
     - `-n` set image name, such as `linux-4.19.190-xeno`
 
 > Notes:
-    1. Non-Linux kernel can refer to the above method to build uImage
-    2. After Linux pre-compile configuration, you can use `make uImage` command to generate uImage directly
+>   1. Non-Linux kernel can refer to the above method to build uImage
+>   2. After Linux pre-compile configuration, you can use `make uImage` command to generate uImage directly
