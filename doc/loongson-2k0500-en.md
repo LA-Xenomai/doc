@@ -14,11 +14,11 @@ Booting process:
 2. U-Boot loads uImage from nand flash
 3. Linux kernel mounts rootfs from nand flash
 
-### How to Make uImage
+### How to Build uImage
 
 ![](./img/mk-uimage.png)
 
-According to the following script to make uImage from Linux source code:
+According to the following script to build uImage from Linux source code:
 ```sh
 #!/usr/bin/bash
 cd $(LINUX_SRC_HOME)
@@ -46,4 +46,4 @@ bash scripts/mkuboot.sh \
     - `-e` set entry point, such as `0x90000000008973ec`
     - `-n` set image name, such as `linux-4.19.190-xeno`
 
-Non-Linux kernel can refer to the above method to make uImage.
+Non-Linux kernel can refer to the above method to build uImage.

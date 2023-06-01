@@ -7,7 +7,7 @@
 2K0500开发板中与启动过程相关的资源包括：
 
 - U-Boot：位于 SPI flash 中，作为固件使用
-- Linux 镜像：位于 nand flash 中，需要使用 U-Boot 工具 `mkimage` 制作为 uImage
+- Linux 镜像：位于 nand flash 中，需要使用 U-Boot 工具 `mkimage` 构建为 uImage
 - 根文件系统镜像：位于 nand flash 中，使用 buildroot 制作
 
 启动过程为：
@@ -16,11 +16,11 @@
 2. U-Boot 从 nand flash 中寻找并加载 Linux 内核镜像 uImage
 3. Linux 内核初始化结束时从 nand flash 挂载根文件系统
 
-### uImage 制作流程
+### uImage 构建
 
 ![](../img/mk-uimage.png)
 
-Linux 内核可参考以下脚本制作 uImage：
+Linux 内核可参考以下脚本构建 uImage：
 ```sh
 #!/usr/bin/bash
 cd $(LINUX_SRC_HOME)
@@ -48,4 +48,4 @@ bash scripts/mkuboot.sh \
     - `-e` 选项指定内核入口地址，如 `0x90000000008973ec`
     - `-n` 选项指定内核名称，如 `linux-4.19.190-xeno`
 
-非Linux内核可参考以上方法制作uImage。
+非 Linux 内核可参考以上方法构建 uImage。
