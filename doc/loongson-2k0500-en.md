@@ -21,7 +21,7 @@ Booting process:
 According to the following script to build uImage from Linux source code:
 ```sh
 #!/usr/bin/bash
-cd $(LINUX_SRC_HOME)
+cd $(LINUX_ROOT)
 make *defconfig
 make vmlinux.bin -j
 cat arch/loongarch/boot/vmlinux.bin | \
@@ -37,7 +37,7 @@ bash scripts/mkuboot.sh \
     -d arch/loongarch/boot/vmlinux.bin.gz \
     uImage
 ```
-1. Enter Linux source home `$(LINUX_SRC_HOME)`
+1. Enter Linux source home `$(LINUX_ROOT)`
 2. Generate default configuration
 3. Compile kernel, generate binary file `vmlinux.bin`
 4. Compress `vmlinux.bin` to `vmlinux.bin.gz` with `gzip` 

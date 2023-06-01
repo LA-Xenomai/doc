@@ -39,7 +39,7 @@ bash scripts/mkuboot.sh \
     -d arch/loongarch/boot/vmlinux.bin.gz \
     uImage
 ```
-1. 进入 Linux 源码目录 `$(LINUX_SRC_HOME)`
+1. 进入 Linux 源码目录 `$(LINUX_ROOT)`
 2. 生成默认的内核编译配置文件
 3. 编译内核，生成二进制文件 `vmlinux.bin`
 4. 使用 `gzip` 将 `vmlinux.bin` 压缩为 `vmlinux.bin.gz`
