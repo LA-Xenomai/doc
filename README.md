@@ -1,6 +1,6 @@
 ## 目录
 
-[For English](https://github.com/LA-Xenomai/doc/README-en.md)
+[For English](https://github.com/LA-Xenomai/doc/blob/master/README-en.md)
 
 ### LoongArch 平台
 
