@@ -42,8 +42,8 @@ bash scripts/mkuboot.sh \
 3. Compile kernel, generate binary file `vmlinux.bin`
 4. Compress `vmlinux.bin` to `vmlinux.bin.gz` with `gzip` 
 5. Run script `mkuboot.sh`, which calls `mkimage`
-        - `-a` set load address, such as `0x9000000000200000`
-        - `-e` set entry point, such as `0x90000000008973ec`
-        - `-n` set image name, such as `linux-4.19.190-xeno`
+    - `-a` set load address, such as `0x9000000000200000`
+    - `-e` set entry point, such as `0x90000000008973ec`
+    - `-n` set image name, such as `linux-4.19.190-xeno`
 
 Non-Linux kernel can refer to the above method to make uImage.

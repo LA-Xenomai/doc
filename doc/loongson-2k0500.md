@@ -1,5 +1,7 @@
 ## 龙芯2K0500
 
+[For English](https://github.com/LA-Xenomai/doc/blob/master/doc/loongson-2k0500-en.md)
+
 ### 启动过程
 
 2K0500开发板中与启动过程相关的资源包括：
@@ -42,8 +44,8 @@ bash scripts/mkuboot.sh \
 3. 编译内核，生成二进制文件 `vmlinux.bin`
 4. 使用 `gzip` 将 `vmlinux.bin` 压缩为 `vmlinux.bin.gz`
 5. 运行脚本 `mkuboot.sh`，该脚本调用工具 `mkimage`，该工具源自 U-Boot 项目。
-        - `-a` 选项指定内核加载地址，如 `0x9000000000200000`
-        - `-e` 选项指定内核入口地址，如 `0x90000000008973ec`
-        - `-n` 选项指定内核名称，如 `linux-4.19.190-xeno`
+    - `-a` 选项指定内核加载地址，如 `0x9000000000200000`
+    - `-e` 选项指定内核入口地址，如 `0x90000000008973ec`
+    - `-n` 选项指定内核名称，如 `linux-4.19.190-xeno`
 
-非Linux内核可参考以上方法制作uImage
+非Linux内核可参考以上方法制作uImage。
